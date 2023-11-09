@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Animation</title>
+    <style>
+        #train {
+            width: 50px;
+            height: 30px;
+            background-color: #a52a2a;
+            position: relative;
+            animation: moveTrain 2s linear infinite;
+        }
+
+        @keyframes moveTrain {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: calc(100% - 50px);
+            }
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="train"></div>
+    </div>
+
+    <button onclick="startTrain()">Start</button>
+    <button onclick="stopTrain()">Stop</button>
+
+    <script>
+        var train = document.getElementById('train');
+
+        function startTrain() {
+            train.style.animationPlayState = 'running';
+        }
+
+        function stopTrain() {
+            train.style.animationPlayState = 'paused';
+        }
+    </script>
+
+</body>
+</html>

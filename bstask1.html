@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Layout</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Blue background row -->
+    <div class="container-fluid bg-primary text-white p-3">
+        <h2>Blue Background Row</h2>
+    </div>
+
+    <!-- Row with 4 columns on the left and 2 columns on the right -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- 4 columns on the left -->
+            <div class="col-md-3">
+                <h4>Column 1</h4>
+                <p>Left Content</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Column 2</h4>
+                <p>Left Content</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Column 3</h4>
+                <p>Left Content</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Column 4</h4>
+                <p>Left Content</p>
+            </div>
+
+            <!-- 2 columns on the right -->
+            <div class="col-md-6 offset-md-3">
+                <h4>Column 5 (Right)</h4>
+                <p>Right Content</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
